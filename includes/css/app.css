@@ -491,6 +491,9 @@ button.emphasis {
     width: 10px;
     height: 10px; }
 
+button svg {
+  margin-right: 7px; }
+
 button.emphasis:hover {
   background: #1068b2; }
 
@@ -659,7 +662,7 @@ button.black {
   transition: 0.3s; }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.sidenav .closebtn, .sidenav .closebtn:hover {
   position: absolute;
   color: #fff;
   top: 0;
@@ -838,6 +841,12 @@ ul.primary li:hover > a {
 #mySidenav ul li {
   width: 100%; }
 
+.in_progress {
+  color: #fff;
+  background: #000;
+  padding: 0px 0 20px 30px;
+  font-style: italic; }
+
 @media only screen and (max-width: 600px) {
   li {
     float: none; }
@@ -857,12 +866,15 @@ ul.primary li:hover > a {
     margin: 0 auto;
     text-align: center; }
   #nav_bar > ul {
-    max-width: 530px;
+    max-width: 670px;
     margin: 0 auto; }
   #nav_bar > ul > li > a {
-    font-size: 16px; }
+    font-size: 16px;
+    text-align: center; }
   #nav_bar > ul > li > ul > li {
     font-size: 16px; }
+  svg {
+    margin-bottom: 3px; }
   .nav_bar-fixed {
     top: 0;
     left: 0;
@@ -893,7 +905,7 @@ ul.primary li:hover > a {
     text-decoration: none;
     border-bottom: 1px solid #fff; }
   ul.primary li a {
-    padding: 25px 30px 10px 30px;
+    padding: 20px 30px 15px 30px;
     border-top: none;
     color: #333; }
   ul.primary li:hover a {
@@ -915,7 +927,11 @@ ul.primary li:hover > a {
   .sidenav {
     display: none; }
   .modal_action {
-    display: none; } }
+    display: none; }
+  .in_progress {
+    color: #888;
+    padding: 15px 30px;
+    background: none; } }
 
 ul.swatches {
   display: block;
